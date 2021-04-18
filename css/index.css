@@ -1,3 +1,4 @@
+
 nav{
   background-color: rgba(221, 180, 150, 0.5)
 }
@@ -12,4 +13,28 @@ ul li a{
 }
 ul li a :hover{
   color:hsl(15, 88%, 35%)
+}
+#inputColor{
+  width: 220px;
+  height: 45px;
+  border: 2px solid 
+}
+::placeholder{
+  text-align: center;
+  font-size: 25px;
+}
+#selectorColor{
+  width: 50px;
+  height: 50px;
+}
+main{
+  text-align: center;
+} 
+button{
+  margin: 20px;
+  width: 100px;
+  height: 50px;
+  border: 2px solid ;
+  background-color: green;
+   font-size: 15px;
 }

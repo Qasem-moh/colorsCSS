@@ -8,26 +8,42 @@
 	<link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body id="myDIV">
 	<header>
 		<nav>
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-          <li>
-          <a href="html/rgb.html">RGB Colors</a>
-        </li>
-          <li>
-          <a href="html/hx.html">HEX Colors</a>
-        </li>
-          <li>
-          <a href="html/hsl.html">HSL and HSLA Colors</a>
-        </li>
-      </ul>
-    </nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="html/rgb.html">RGB Colors</a>
+				</li>
+				<li>
+					<a href="html/hx.html">HEX Colors</a>
+				</li>
+				<li>
+					<a href="html/hsl.html">HSL and HSLA Colors</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
-	<main></main>
+	<main>
+
+
+<!-- <div id="myDIV">
+  <h1>Hello</h1>
+</div> -->
+		<h1>Welcome in CSS Colors </h1>
+
+		Please Enter Color Name to Change background of page<br><br>
+
+ <input type="text" name="" id="inputColor"  placeholder="Enter Color Name"><button onclick="myFunction()">Click Here</button>
+  <br><br>
+
+  <h2>or Select Here</h2><br><br>
+
+<input type="color" name="" id="selectorColor" onchange="myFunction1()">
+  </main>
 	<footer></footer>
 	<script src="js/index.js">
 	</script>
