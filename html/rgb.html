@@ -4,9 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RGB</title>
+<link rel="stylesheet" href="../css/index.css">
+<link rel="stylesheet" href="../css/rgb.css">
+
 </head>
 <body>
- <h1>g</h1>
+<header>
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="html/rgb.html">RGB Colors</a>
+				</li>
+				<li>
+					<a href="html/hx.html">HEX Colors</a>
+				</li>
+				<li>
+					<a href="html/hsl.html">HSL and HSLA Colors</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+ <main>
+<!-- <input type="range" name="" id="" min="0" max="255"> -->
+<!-- <span></span> -->
+<input type="range" id="rangData" name="rangeInput" min="0" max="100" onchange="setValueRange()">
+<input type="text" id="xin" value="0">
+
+
+<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
+<input type="text" id="textInput" value="">
+ </main>
 <script src="js/rgb.js"></script>
 </body>
 </html>
