@@ -1,4 +1,4 @@
-alert("h")
+
 var inputColor=document.getElementById("inputColor")
 var selectorColor=document.getElementById("selectorColor")
 // bodyPage.style.backgroundColorr=inputColor;
