@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="../css/rgb.css">
 
 </head>
-<body>
+<body id="mydiv">
 <header>
 		<nav>
 			<ul>
@@ -28,15 +28,43 @@
 		</nav>
 	</header>
  <main>
-<!-- <input type="range" name="" id="" min="0" max="255"> -->
-<!-- <span></span> -->
-<input type="range" id="rangData" name="rangeInput" min="0" max="100" onchange="setValueRange()">
-<input type="text" id="xin" value="0">
+   <input type="range" name="rangeData" id="rangeData" min="0" max="255" onchange="getData()">
+    <!-- <span id="outputData"></span> -->
+    <output type="text" name="outputData" id="outputData">
 
 
-<input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
-<input type="text" id="textInput" value="">
+         <input type="range" name="rangeData2" id="rangeData2" min="0" max="255" onchange="getData()">
+    <!-- <span id="outputData"></span> -->
+    <output type="text" name="outputData2" id="outputData2">
+
+         <input type="range" name="rangeData3" id="rangeData3" min="0" max="255" onchange="getData()">
+    <!-- <span id="outputData"></span> -->
+    <output type="text" name="outputData3" id="outputData3">
  </main>
 <script src="js/rgb.js"></script>
+<script>
+  var x= document.getElementById("rangeData")
+       var d= document.getElementById("outputData")
+
+
+var x2= document.getElementById("rangeData2")
+       var d2= document.getElementById("outputData2")
+
+
+       var x3= document.getElementById("rangeData3")
+       var d3= document.getElementById("outputData3")
+
+    function getData(){
+        var t=Number(x)
+         var t2=Number(x2)
+          var t3=Number(x3)
+        console.log(typeof(t))
+       d.innerText=x.value
+       d2.innerText=x2.value
+       d3.innerText=x3.value
+       console.log(d.value)
+       document.getElementById("mydiv").style.backgroundColor="rgb("+d.value+","+d2.value+","+d3.value+")"
+    }
+</script>
 </body>
 </html>
